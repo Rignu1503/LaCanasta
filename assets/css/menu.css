@@ -1,0 +1,75 @@
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Cormorant+Infant:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  font-family: "Josefin Sans", sans-serif; }
+
+.header {
+  background: #292E36; }
+  .header .header-serparador {
+    padding: 25px; }
+  .header .header_content {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    align-items: center; }
+    .header .header_content img {
+      width: 300px; }
+    .header .header_content .btn {
+      padding: 15px 30px;
+      font-size: 20px;
+      font-weight: 500;
+      border: solid 3px #E1B168;
+      cursor: pointer;
+      transition: 0.2s; }
+      .header .header_content .btn__contact {
+        background: #292E36;
+        color: #FFF8F5; }
+        .header .header_content .btn__contact:hover {
+          background: #E1B168;
+          color: #292E36; }
+      .header .header_content .btn__reservation {
+        background: #E1B168;
+        color: #292E36; }
+        .header .header_content .btn__reservation:hover {
+          background: #292E36;
+          color: #E1B168; }
+  .header .header-nav {
+    border-width: 1px 0px;
+    border-style: solid;
+    border-color: #555555;
+    padding: 30px;
+    display: flex;
+    justify-content: space-between; }
+    .header .header-nav .nav-list {
+      display: flex;
+      list-style-type: none;
+      align-items: center;
+      gap: 20px;
+      padding-bottom: 4px;
+      padding-left: 7px;
+      color: #FFF8F5;
+      font-size: 20px; }
+      .header .header-nav .nav-list .nav-link {
+        color: #FFF8F5;
+        text-decoration: none; }
+        .header .header-nav .nav-list .nav-link:hover {
+          color: #E1B168;
+          transition: 0.5s ease; }
+        .header .header-nav .nav-list .nav-link:first-of-type {
+          color: #E1B168; }
+    .header .header-nav .social-list {
+      display: flex;
+      gap: 15px;
+      list-style-type: none; }
+      .header .header-nav .social-list .social-link {
+        color: #FFF8F5;
+        font-size: 25px; }
+
+@media only screen and (max-width: 768px) {
+  .header_content {
+    flex-direction: column;
+    gap: 1.5rem; } }
+
+/*# sourceMappingURL=menu.css.map */

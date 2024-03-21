@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Infant:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    font-family: "Josefin Sans", sans-serif;
+}
+
+
+
+.header{
+
+    // border: solid 1px green;
+    background: map-get($map: $palette, $key: 'secondary');
+
+    .header-serparador{
+        padding: 25px;
+    }
+
+    .header_content{
+        // border: solid 1px red;
+        display: flex;
+        justify-content: space-between ;
+        width: 100%;
+        align-items: center;
+
+        img{
+            width: 300px;
+        }
+
+        .btn{
+            @include button();
+            &__contact{
+                background: map-get($map: $palette, $key: 'secondary');
+                color: map-get($map: $palette, $key: 'light');
+                &:hover{
+                    background:  map-get($map: $palette, $key: 'primary');
+                    color: map-get($map: $palette, $key: 'secondary');
+                }
+
+            }
+            &__reservation{
+                background: map-get($map: $palette, $key: 'primary');
+                color: map-get($map: $palette, $key: 'secondary');
+                &:hover{
+                    background:  map-get($map: $palette, $key: 'secondary');
+                    color: map-get($map: $palette, $key: 'primary');
+                }
+            }
+
+        }
+    }
+
+
+    .header-nav{
+        // border: 2px solid map-get($map: $palette, $key: light);
+        border-width: 1px 0px;
+        border-style: solid;
+        border-color: map-get($map: $palette, $key: 'light-gray');
+        padding: 30px;
+        display: flex;
+        justify-content: space-between;
+
+        .nav-list{
+            display: flex;
+            list-style-type: none;
+            align-items: center;
+            gap: 20px;
+            padding-bottom: 4px;
+            padding-left: 7px;
+            color: map-get($map: $palette, $key: light);
+            font-size: 20px;
+
+            .nav-link{
+                color: map-get($map: $palette, $key: light);
+                text-decoration: none;
+                &:hover{
+                    color: map-get($map: $palette, $key: 'primary');
+                    transition: 0.5s ease;
+                }
+                &:first-of-type{
+                    color: map-get($map: $palette, $key: 'primary');
+                }
+            }
+        }
+
+        .social-list{
+            display: flex;
+            gap: 15px;
+            list-style-type: none;
+
+            .social-link{
+                color: map-get($map: $palette, $key: light);
+                font-size: 25px;
+            }
+        }
+    }
+}
+
+
+
+
+
+// .image{
+//     width: 300px;
+//     margin-left: 50%;
+//     
+// }
+
+
+@media only screen and (max-width: 768px) {
+
+    .header_content{
+        flex-direction: column;
+        gap: 1.5rem;
+
+    }
+}

@@ -1,0 +1,142 @@
+
+.photo-separator{
+        display: block;
+    .photo-separator__image{
+
+        background: transparent;
+        height: 100px;
+        background-image: url('https://assets-global.website-files.com/622856f73bdd0f82f7741cb2/627610ea83e7ae06d5a9d0cb_tasteat-large-image.jpg');
+        background-position: 50%;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-attachment: fixed;
+        height: 70vh;
+    }
+}
+    
+
+.menu{
+    color: color(light-gray);
+    margin: 25px;
+    display: flex;
+    flex-direction: column;
+
+    .menu-tittle{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        margin: 25px;
+
+        &-menu{
+            color: color(secondary);            
+            display: inline-block;
+            border-top: 3px solid color(primary);
+            border-bottom: 3px solid color(primary);
+            padding-top: 5px;
+            font-weight: 500;
+            font-size: 20px;
+        }
+            
+        &-subtitle{
+            color: color(secondary);
+            font-weight: 800;
+            font-size: 40px;
+            padding: 30px;
+            text-align: center;
+        }
+
+        &-text{
+            margin: 0 10%;
+            width: 90%;
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+    }
+
+    .container_menu{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        gap: 50px;
+    
+        .menu-container{
+            width: 321px;
+
+            .img{
+              border-radius: 8px;
+            }
+                        
+            .menu-container__detail{
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                text-transform: capitalize;
+
+                .menu-container__title{
+                    font-family: "Cormorant Infant", serif;
+                    color: color(secondary);
+                    font-size: 30px;
+                    line-height: 0.9;
+                    padding-top: 10px;
+                    padding-bottom: 10px;
+                    align-items: center;
+
+                }
+                .menu-container__price{
+                    font-family: "Cormorant Infant", serif;
+                    color: color(secondary);
+                    font-size: 30px;
+                    font-weight: 700;
+                }
+
+            }
+            .menu-container__text{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                width: 321px;
+                padding-top: 10px;
+                border-top: 1px solid color(light-gray);
+            }
+
+        }
+    }
+
+}
+
+@media only screen and (max-width: 768px) {
+
+
+
+
+    .menu{
+        margin: auto;
+
+        .container_menu{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        
+            .menu-container{         
+                
+
+                .menu-container__detail{
+                    justify-content: center; 
+                    align-items: center;
+                    text-transform: capitalize;
+
+                    .menu-container__title{
+                        padding-top: 10px;
+                        padding-bottom: 10px;
+
+                    }
+
+
+                }
+
+            }
+        }
+}
+}

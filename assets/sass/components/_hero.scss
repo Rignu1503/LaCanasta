@@ -1,0 +1,119 @@
+main{
+
+    .separador{
+    padding: 25px 50px 0px;
+
+    background: map-get($map: $palette, $key: secondary);
+        .hero{
+            display: flex;
+            justify-content: space-around;
+            color: map-get($map: $palette, $key: light);
+            flex-wrap: wrap;
+
+            .hero-content__text{
+                display: table;
+                flex-direction: column;
+                flex-grow: 1;
+
+                .hero_text{
+                    max-width: 600px;
+                    height: auto;
+                    display: table-cell;
+                    vertical-align: middle;
+                    padding: 5px 0px 30px;
+
+                    .hero_title{
+                        font-family: "Cormorant Infant", serif;
+                        font-size: 100px;
+                        line-height: 0.9;
+                        
+
+                    }
+                    .hero_content{
+                        padding: 20px 0;
+                        font-size: 20px;
+                        margin-bottom: 30px;
+                        max-width: 80%;
+                        line-height: 1.5;
+                    }
+                    .hero-button{
+                        @include button();
+                        background: map-get($map: $palette, $key: 'primary');
+                        color: map-get($map: $palette, $key: 'secondary');
+                        &:hover{
+                            background:  map-get($map: $palette, $key: 'secondary');
+                            color: map-get($map: $palette, $key: 'primary');
+                        }
+                    }
+
+                }
+            }
+
+            .hero_image{
+                width: 50%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+
+                .hero_image--photo{
+                    width: 70%;
+                    min-width: 250px;
+                    border-top-right-radius: 50%;
+                    border-top-left-radius: 50%;
+                    border-style: solid;
+                    border-color: color(gray-degradado);
+                    border-width: 30px;
+                    border-bottom: none;
+
+                }
+                .hero_iamage--wheel{
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    width: 100%;
+                    height: 100%;
+                    z-index: -1;
+
+                }
+            }
+        }
+
+    }
+}
+
+@media only screen and (max-width: 1290px) {
+    main{
+
+        .separador{
+
+            .hero{
+
+                .hero-content__text{
+
+                    .hero_text{
+                        text-align: center;
+
+                        .hero_title{
+                            font-size: 45px;
+
+                        }
+                        .hero_content{
+                            padding: 10px 10% 10px;
+
+                        }
+
+                    }
+                }
+
+            }
+            .hero_image{
+                width: none;
+                img{
+                    width: 300px;
+                }
+            }
+
+        }
+    }
+
+}
