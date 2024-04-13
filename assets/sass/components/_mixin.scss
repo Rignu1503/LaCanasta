@@ -7,3 +7,13 @@
     transition: .2s ;
         
 }
+
+@mixin TextColor($color, $colorHover){
+    color: color($color);
+    &:hover{
+        color: color($colorHover);
+        transition: 0.5s ease;
+
+    }
+
+}

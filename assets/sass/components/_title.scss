@@ -1,0 +1,17 @@
+.title{
+    background: color(secondary);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 0px;
+    
+    h1{
+        font-family: "Cormorant Infant", serif;
+        color: color(light);
+        padding: 10px 0;
+        border-top: 1px solid color(primary);
+        border-bottom: 1px solid color(primary);
+        font-weight: 500;
+        font-size: 60px;
+    }
+}

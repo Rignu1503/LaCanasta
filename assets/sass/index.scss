@@ -1,9 +1,10 @@
-@import "components/variables";
-@import "components/funtions";
+@import "./components/variables";
+@import "./components/funtions";
 @import "components/mixin";
 
-@import "components/header";
-@import "components/hero";
-@import "components/history";
-@import "components/detail";
-@import "components/resume_menu";
+@import "./components/header";
+@import "./components/hero";
+@import "./components/history";
+@import "./components/detail";
+@import "./components/resume_menu";
+@import "./components/footer";

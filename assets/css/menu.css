@@ -39,21 +39,21 @@
     border-width: 1px 0px;
     border-style: solid;
     border-color: #555555;
-    padding: 30px;
+    padding: 15px;
     display: flex;
     justify-content: space-between; }
     .header .header-nav .nav-list {
       display: flex;
       list-style-type: none;
       align-items: center;
-      gap: 20px;
+      gap: 10px;
       padding-bottom: 4px;
       padding-left: 7px;
       color: #FFF8F5;
       font-size: 20px; }
       .header .header-nav .nav-list .nav-link {
-        color: #FFF8F5;
-        text-decoration: none; }
+        text-decoration: none;
+        color: #FFF8F5; }
         .header .header-nav .nav-list .nav-link:hover {
           color: #E1B168;
           transition: 0.5s ease; }
@@ -71,5 +71,24 @@
   .header_content {
     flex-direction: column;
     gap: 1.5rem; } }
+.title {
+  background: #292E36;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px 0px; }
+  .title h1 {
+    font-family: "Cormorant Infant", serif;
+    color: #FFF8F5;
+    padding: 10px 0;
+    border-top: 1px solid #E1B168;
+    border-bottom: 1px solid #E1B168;
+    font-weight: 500;
+    font-size: 60px; }
+
+.starters {
+  padding: 50px 25px;
+  display: flex;
+  flex-direction: row; }
 
 /*# sourceMappingURL=menu.css.map */
