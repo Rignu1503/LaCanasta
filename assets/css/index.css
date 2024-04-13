@@ -153,8 +153,7 @@ main .separador {
   flex-wrap: wrap;
   gap: 5%; }
   .history .history-img img {
-    width: auto;
-    height: auto; }
+    width: 100%; }
   .history .container-text {
     display: flex;
     justify-content: center;
